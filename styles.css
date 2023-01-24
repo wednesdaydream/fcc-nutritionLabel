@@ -1,13 +1,13 @@
 * {
-  box-sizing: border-box;
+  box-sizing: border-box;                     /*设置统一的盒模型*/
 }
 
 html {
-  font-size: 16px;
+  font-size: 16px;                            /*规定根元素字体大小*/
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;       /*第一个是在线字体*/
 }
 
 .label {
@@ -19,18 +19,18 @@ body {
 
 header h1 {
   text-align: center;
-  margin: -4px 0;
-  letter-spacing: 0.15px
+  margin: -4px 0;                        /*负 margin 值的应用*/
+  letter-spacing: 0.15px                 /*letter-spacing 的应用*/
 }
 
 p {
   margin: 0;
-  display: flex;
-  justify-content: space-between;
+  display: flex;                         /*规定所有 p 元素都采取 flexbox 布局*/
+  justify-content: space-between;        /*设置 flex items 的间距*/
 }
 
 .divider {
-  border-bottom: 1px solid #888989;
+  border-bottom: 1px solid #888989;      
   margin: 2px 0;
 }
 
@@ -56,8 +56,8 @@ p {
 }
 
 
-.calories-info {
-  display: flex;
+.calories-info {                   
+  display: flex;                       /*规定 calories-info 类为 flexbox 布局*/
   justify-content: space-between;
   align-items: flex-end;
 }
@@ -79,25 +79,25 @@ p {
 }
 
 .right {
-  justify-content: flex-end;
+  justify-content: flex-end;        /*对 flex-item 应用 justify-content 来使它居右*/  
 }
 
 .indent {
-  margin-left: 1em;
+  margin-left: 1em;               /*设置缩进类*/
 }
 
 .double-indent {
-  margin-left: 2em;
+  margin-left: 2em;          
 }
 
-.daily-value p:not(.no-divider) {
-  border-bottom: 1px solid #888989;
+.daily-value p:not(.no-divider) {         /*伪类选择器（:not）的应用*/
+  border-bottom: 1px solid #888989; 
 }
 
-.note {
+.note {       
   font-size: 0.6rem;
   margin: 5px 0;
   padding: 0 8px;
-  text-indent: -8px;
+  text-indent: -8px;                /*设置缩进为负值的排版*/
   
 }
